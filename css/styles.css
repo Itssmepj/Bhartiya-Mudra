@@ -1040,6 +1040,10 @@ button {
   padding: 15rem 0 2rem;
 }
 
+footer .row {
+  align-items: center;
+}
+
 .img-fluid {
   width: 100px;
 }
@@ -1049,7 +1053,7 @@ button {
 }
 
 .footer .widget_wrapper .widget .widget_title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .company-name {
