@@ -80,6 +80,16 @@
         text-wrap: pretty;
     }
 
+    .work-step {
+        padding: 4rem 0 0rem;
+    }
+
+    .work-step > div {
+        flex-wrap: wrap;
+        gap: 65px;
+        justify-content: center;
+    }
+
     .faq {
         padding: 5rem 0 2rem;
     }
@@ -139,6 +149,11 @@
 
     .new-arrival {
         padding: 2rem 0;
+    }
+
+    .how-we-work .card {
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .faq {
