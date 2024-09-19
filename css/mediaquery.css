@@ -76,6 +76,10 @@
         margin: 5rem auto;
     }
 
+    .paragraph {
+        text-wrap: pretty;
+    }
+
     .faq {
         padding: 5rem 0 2rem;
     }
