@@ -90,6 +90,14 @@
         justify-content: center;
     }
 
+    .testimonial {
+        padding: 6rem 3rem;
+    }
+
+    .cover {
+        margin-top: 35px;
+    }
+
     .faq {
         padding: 5rem 0 2rem;
     }
@@ -154,6 +162,10 @@
     .how-we-work .card {
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .testimonial {
+        padding: 4.5rem 3rem;
     }
 
     .faq {
