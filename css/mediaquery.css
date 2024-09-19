@@ -119,6 +119,11 @@
         font-weight: 500;
     }
 
+    .cta .row {
+        flex-direction: column-reverse;
+        gap: 35px;
+    }
+
     .new-arrival {
         padding: 2rem 0;
     }
