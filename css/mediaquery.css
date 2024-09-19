@@ -140,6 +140,12 @@
     }
 }
 
+@media only screen and (max-width: 971px) {
+    .quick-contact {
+        margin-top: -117px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .brand {
         font-size: 1.5rem;
@@ -177,9 +183,6 @@
         margin-top: 2rem;
     }
 
-    .faq {
-        padding: 4rem 0 2rem;
-    }
 }
 
 @media (max-width: 767px) {
@@ -193,8 +196,8 @@
 
     .quick-contact .cta_wrapper .button_box {
         float: none;
-        text-align: center;
-        margin-top: 30px;
+        text-align: left;
+        margin-top: 10px;
     }
 }
 
@@ -212,8 +215,14 @@
     }
 
     .faq {
-        padding: 3rem 0 2rem;
+        padding: 3rem 0 10rem;
     }
+}
+
+@media only screen and (max-width: 560px) {
+    .quick-contact {
+        margin-top: -129px;
+    } 
 }
 
 @media only screen and (max-width: 542px) {
@@ -225,6 +234,12 @@
         padding: 4rem 0 2.5rem;
     }
 }  
+
+@media (max-width:536px) {
+    .quick-contact {
+        margin-top: -143px;
+    }
+}
 
 @media (max-width:500px) {
     .how-we-work {
@@ -241,7 +256,7 @@
     }
 
     .faq {
-        padding: 2.5rem 0 2rem;
+        padding: 2.5rem 0 10rem;
     }
 
 }
