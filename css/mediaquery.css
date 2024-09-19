@@ -124,6 +124,10 @@
         gap: 35px;
     }
 
+    .cta-img {
+        height: auto;
+    }
+
     .new-arrival {
         padding: 2rem 0;
     }
