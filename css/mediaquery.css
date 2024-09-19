@@ -102,6 +102,10 @@
         padding: 5rem 0 10rem;
     }
 
+    .footer .widget_wrapper {
+        padding: 13rem 0 1rem;
+    }
+
     .scroll-images {
         overflow: auto;
     }
@@ -281,7 +285,7 @@
     }
 
     .quick-contact {
-        margin-top: 3rem;
+        margin-top: -122px;
     }
 
     .quick-contact .cta_wrapper {
@@ -325,5 +329,12 @@
         padding: 3rem 9px 2rem;
     }
 }
+
+@media only screen and (max-width: 332px) {
+    .quick-contact {
+        margin-top: -146px;
+    }
+}
+
 
 
