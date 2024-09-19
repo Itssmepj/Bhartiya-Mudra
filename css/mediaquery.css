@@ -98,6 +98,14 @@
 @media (max-width:990px) {
     .container{
         max-width: 100%;
+    }   
+
+    .catalogue .carousel {
+        gap: 30px;
+    }
+
+    .carousel-container {
+        margin: 0 20px;
     }
 }
 
@@ -126,6 +134,7 @@
 
     .cta-img {
         height: auto;
+        width: auto;
     }
 
     .new-arrival {
@@ -154,6 +163,14 @@
 }
 
 @media only screen and (max-width: 630px) {
+    .catalogue {
+        padding: 4rem 0 2rem;
+    }
+    
+    .carousel-section {
+        padding: 2rem 0;
+    }
+
     .faq {
         padding: 3rem 0 2rem;
     }
@@ -162,6 +179,10 @@
 @media only screen and (max-width: 542px) {
     .banner-column {
         margin: 2rem auto;
+    }
+
+    .cta {
+        padding: 4rem 0 2.5rem;
     }
 }  
 
