@@ -116,7 +116,7 @@
         padding: 4rem 0 10rem;
     }
 
-    footer .row > div {
+    footer .widget_wrapper .container .row > div {
         margin-bottom: 2rem;
     }
 }
