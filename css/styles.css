@@ -505,14 +505,6 @@ video {
   scroll-behavior: smooth;
 }
 
-/* .carousel-container {
-  position: relative;
-  overflow: hidden;
-  width: 1200px;
-  max-width: 100%;
-  padding: 25px 0;
-} */
-
 .carousel-container {
   position: relative;
   overflow: hidden;
@@ -529,13 +521,10 @@ video {
 }
 
 .carousel-image {
-  /* width: 180px; */
   width: auto;
   height: 180px;
-  /* border-radius: 50%; */
   transition: transform 0.3s ease-in-out;
   box-shadow: 1px 0px 10px 4px rgb(0 0 0 / 47%);
-  /* box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5); */
 }
 
 .carousel-image:hover {
@@ -549,7 +538,7 @@ video {
   transform: translateY(-50%);
   color: #000;
   cursor: pointer;
-  background: rgb(255, 255, 255, 0.3);
+  background: rgb(255, 255, 255, 0.6);
   width: 36px;
   font-size: 28px;
   display: flex;
@@ -561,6 +550,10 @@ video {
   -webkit-box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.5);
+}
+
+.arrow-button:hover {
+  background: rgba(193, 208, 234, 0.838); /* Darken on hover */
 }
 
 span {
