@@ -38,57 +38,59 @@ window.addEventListener("resize", () => {
 
 
 // Catalog Section
-const carousel = document.querySelector(".carousel");
-const images = document.querySelectorAll(".carousel-image");
-const leftArrow = document.querySelector(".left-arrow");
-const rightArrow = document.querySelector(".right-arrow");
+// const carousel = document.querySelector(".carousel");
+// const images = document.querySelectorAll(".carousel-image");
+// const leftArrow = document.querySelector(".left-arrow");
+// const rightArrow = document.querySelector(".right-arrow");
 
-let currentIndex = 0;
-const totalImages = images.length;
-const gap = 55; // Updated gap to 70px
-const imageWidth = 200; // Set image width to 200px
+// let currentIndex = 0;
+// const totalImages = images.length;
+// const gap = 55; // Updated gap to 70px
+// const imageWidth = 200; // Set image width to 200px
 
-// Clone the first few elements to the end to create an infinite loop effect
-for (let i = 0; i < 5; i++) {
-  carousel.appendChild(images[i].cloneNode(true));
-}
+// // Clone the first few elements to the end to create an infinite loop effect
+// for (let i = 0; i < 5; i++) {
+//   carousel.appendChild(images[i].cloneNode(true));
+// }
 
-// Clone the last few elements to the start to create an infinite loop effect
-for (let i = totalImages - 1; i >= totalImages - 5; i--) {
-  carousel.insertBefore(images[i].cloneNode(true), carousel.firstChild);
-}
+// // Clone the last few elements to the start to create an infinite loop effect
+// for (let i = totalImages - 1; i >= totalImages - 5; i--) {
+//   carousel.insertBefore(images[i].cloneNode(true), carousel.firstChild);
+// }
 
-let offset = (imageWidth + gap) * 5; // Offset for the initial cloned images
-carousel.style.transform = `translateX(-${offset}px)`;
+// let offset = (imageWidth + gap) * 5; // Offset for the initial cloned images
+// carousel.style.transform = `translateX(-${offset}px)`;
 
-leftArrow.addEventListener("click", () => {
-  currentIndex--;
-  carousel.style.transition = "transform 0.5s ease-in-out";
-  carousel.style.transform = `translateX(-${(currentIndex + 5) * (imageWidth + gap)}px)`;
+// leftArrow.addEventListener("click", () => {
+//   currentIndex--;
+//   carousel.style.transition = "transform 0.5s ease-in-out";
+//   carousel.style.transform = `translateX(-${(currentIndex + 5) * (imageWidth + gap)}px)`;
 
-  if (currentIndex < 0) {
-    setTimeout(() => {
-      carousel.style.transition = "none";
-      currentIndex = totalImages - 1;
-      carousel.style.transform = `translateX(-${(currentIndex + 5) * (imageWidth + gap)}px)`;
-    }, 500);
-  }
-});
+//   if (currentIndex < 0) {
+//     setTimeout(() => {
+//       carousel.style.transition = "none";
+//       currentIndex = totalImages - 1;
+//       carousel.style.transform = `translateX(-${(currentIndex + 5) * (imageWidth + gap)}px)`;
+//     }, 500);
+//   }
+// });
 
-rightArrow.addEventListener("click", () => {
-  currentIndex++;
-  carousel.style.transition = "transform 0.5s ease-in-out";
-  carousel.style.transform = `translateX(-${(currentIndex + 5) * (imageWidth + gap)}px)`;
+// rightArrow.addEventListener("click", () => {
+//   currentIndex++;
+//   carousel.style.transition = "transform 0.5s ease-in-out";
+//   carousel.style.transform = `translateX(-${(currentIndex + 5) * (imageWidth + gap)}px)`;
 
-  if (currentIndex >= totalImages) {
-    setTimeout(() => {
-      carousel.style.transition = "none";
-      currentIndex = 0;
-      carousel.style.transform = `translateX(-${offset}px)`;
-    }, 500);
-  }
-});
+//   if (currentIndex >= totalImages) {
+//     setTimeout(() => {
+//       carousel.style.transition = "none";
+//       currentIndex = 0;
+//       carousel.style.transform = `translateX(-${offset}px)`;
+//     }, 500);
+//   }
+// });
 // Ends
+
+
 
 
 
@@ -173,6 +175,52 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Footer year
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  loop: true,
+  centerSlide: 'true',
+  fade: 'true',
+  grabCursor: 'true',
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints:{
+      0: {
+          slidesPerView: 1,
+      },
+      520: {
+          slidesPerView: 2,
+      },
+      950: {
+          slidesPerView: 3,
+      },
+  },
+});
+
 
 
 
